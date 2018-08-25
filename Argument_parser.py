@@ -6,6 +6,7 @@ parser.add_argument('-w','--writefile',required=True,help='Write file Name')
 parser.add_argument('-v','--verbose',action='store_true',help='Verbose')
 args=parser.parse_args()
 
+#should be run from command line
 with open(args.readfile) as srcfile:
 	with open(rgs.writefile,'w') as dstfile:
 		data = srcfile.read()
